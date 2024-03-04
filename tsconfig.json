@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "module": "NodeNext",
+      "strict": true,
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "moduleResolution": "NodeNext",
+      "sourceMap": true,
+      "outDir": "dist",
+      "forceConsistentCasingInFileNames": true
+    },
+    "lib": ["es2015"]
+}
