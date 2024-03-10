@@ -13,6 +13,9 @@ devDependencies:
   '@types/node':
     specifier: 20.11.25
     version: 20.11.25
+  prettier:
+    specifier: 3.2.5
+    version: 3.2.5
   typescript:
     specifier: 5.4.2
     version: 5.4.2
@@ -290,6 +293,12 @@ packages:
       sonic-boom: 3.8.0
       thread-stream: 2.4.1
     dev: false
+
+  /prettier@3.2.5:
+    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dev: true
 
   /process-warning@2.3.2:
     resolution: {integrity: sha512-n9wh8tvBe5sFmsqlg+XQhaQLumwpqoAUruLwjCopgTmUBjJ/fjtBsJzKleCaIGBOMXYEhp1YfKl4d7rJ5ZKJGA==}
