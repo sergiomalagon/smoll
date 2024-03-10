@@ -6,7 +6,8 @@
 	"type": "module",
 	"scripts": {
 		"build": "tsc",
-		"start": "node dist/index.js"
+		"debug": "tcs && node --inspect dist/index.js",
+		"start": "tsc && node dist/index.js"
 	},
 	"keywords": [],
 	"author": "Sergio Malagón Martín",
