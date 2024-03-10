@@ -1,23 +1,21 @@
 {
-  "name": "back",
-  "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
-  "type": "module",
-  "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js"
-  },
-  "keywords": [],
-  "author": "Sergio Malagón Martín",
-  "license": "MIT",
-  "devDependencies": {
-    "typescript": "5.3.3",
-    "@types/node": "20.11.24"
-  },
-  "dependencies": {
-    "fastify": "4.26.2",
-    "graphql": "16.8.1",
-    "mercurius": "13.3.3"
-  }
+	"name": "back",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/index.js",
+	"type": "module",
+	"scripts": {
+		"build": "tsc",
+		"start": "node dist/index.js"
+	},
+	"keywords": [],
+	"author": "Sergio Malagón Martín",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/node": "20.11.25",
+		"typescript": "5.4.2"
+	},
+	"dependencies": {
+		"fastify": "4.26.2"
+	}
 }
