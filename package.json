@@ -6,7 +6,7 @@
 	"type": "module",
 	"scripts": {
 		"build": "tsc",
-		"debug": "tcs && node --inspect dist/index.js",
+		"debug": "tsc && node --inspect dist/index.js",
 		"start": "tsc && node dist/index.js"
 	},
 	"keywords": [],
