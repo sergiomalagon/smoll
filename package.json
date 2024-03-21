@@ -20,5 +20,6 @@
 		"@types/node": "20.11.25",
 		"prettier": "3.2.5",
 		"typescript": "5.4.2"
-	}
+	},
+	"types": "index.d.ts"
 }
