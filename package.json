@@ -13,9 +13,21 @@
 		"dev": "pnpm run \"/dev:(tsc|node)/\"",
 		"debug": "pnpm run \"/dev:(tsc|node:debug)/\""
 	},
-	"keywords": [],
+	"keywords": [
+		"web server",
+		"node",
+		"no dependencies"
+	],
 	"author": "Sergio Malagón Martín",
 	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sergiomalagon/web-server-lib.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sergiomalagon/web-server-lib/issues"
+	},
+	"homepage": "https://github.com/sergiomalagon/web-server-lib#readme",
 	"devDependencies": {
 		"@types/node": "20.11.25",
 		"prettier": "3.2.5",
