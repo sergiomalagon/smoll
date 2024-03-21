@@ -1,7 +1,7 @@
 {
 	"name": "back",
 	"version": "0.0.1",
-	"description": "",
+	"description": "Node server with zero dependencies",
 	"main": "dist/index.js",
 	"type": "module",
 	"scripts": {
