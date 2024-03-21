@@ -6,8 +6,12 @@
 	"type": "module",
 	"scripts": {
 		"build": "tsc",
-		"debug": "tsc && node --inspect dist/index.js",
-		"start": "tsc && node dist/index.js"
+		"start": "node dist/index.js",
+		"dev:tsc": "tsc --watch --preserveWatchOutput",
+		"dev:node": "node --enable-source-maps --watch dist/index.js",
+		"dev:node:debug": "node --enable-source-maps --inspect --watch dist/index.js",
+		"dev": "pnpm run \"/dev:(tsc|node)/\"",
+		"debug": "pnpm run \"/dev:(tsc|node:debug)/\""
 	},
 	"keywords": [],
 	"author": "Sergio Malagón Martín",
