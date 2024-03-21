@@ -4,7 +4,6 @@
 		"esModuleInterop": true,
 		"skipLibCheck": true,
 		"target": "ES2022",
-		"allowJs": true,
 		"resolveJsonModule": true,
 		"moduleDetection": "force",
 		"isolatedModules": true,
@@ -22,7 +21,9 @@
 		"strictNullChecks": true,
 		"strictFunctionTypes": true,
 		"strictPropertyInitialization": true,
-		"forceConsistentCasingInFileNames": true
+		"forceConsistentCasingInFileNames": true,
+		"declaration": true,
+		"declarationDir": "./types"
 	},
-	"include": ["src/**/*"]
+	"include": ["src/**/*"],
 }
