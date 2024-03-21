@@ -1,5 +1,5 @@
 {
-	"name": "back",
+	"name": "web-server-lib",
 	"version": "0.0.1",
 	"description": "Node server with zero dependencies",
 	"main": "dist/index.js",
