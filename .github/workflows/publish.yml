@@ -1,0 +1,23 @@
+name: Publish to NPM
+on:
+    push:
+        branches:
+            - 'main'
+jobs:
+    publish-npm:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - name: Setup Node
+              uses: actions/setup-node@v3
+              with:
+                  node-version: '20'
+            - name: Install dependencies
+              run: pnpm install
+            - name: Build
+              run: pnpm build
+            - name: Publish package on NPM 📦
+              run: pnpm publish
+              env:
+                  PUBLISH_TOKEN: ${{ secrets.NPM_TOKEN }}
