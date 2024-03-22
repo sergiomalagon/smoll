@@ -38,7 +38,9 @@
 	"homepage": "https://github.com/sergiomalagon/web-server-lib#readme",
 	"devDependencies": {
 		"@types/node": "20.11.25",
+		"eslint": "8.57.0",
 		"prettier": "3.2.5",
-		"typescript": "5.4.2"
+		"typescript": "5.4.2",
+		"typescript-eslint": "7.3.1"
 	}
 }
