@@ -1,25 +1,26 @@
 {
-	"compilerOptions": {
-		// Base options
-		"esModuleInterop": true,
-		"skipLibCheck": true,
-		"target": "ES2022",
-		"allowJs": true,
-		"resolveJsonModule": true,
-		"moduleDetection": "force",
-		"isolatedModules": true,
-		// Strictness
-		"strict": true,
-		"noUncheckedIndexedAccess": true,
-		// Transpiling
-		"moduleResolution": "NodeNext",
-		"module": "NodeNext",
-		"outDir": "dist",
-		"lib": ["ES2022"],
-		// Other
-		"sourceMap": true,
-		"forceConsistentCasingInFileNames": true,
-		"declaration": true
-	},
-	"include": ["index.ts", "lib/**/*"]
+  "compilerOptions": {
+    // Base options
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ES2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    // Strictness
+    "strict": true,
+    // Transpiling
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "outDir": "dist",
+    "lib": ["ES2022"],
+    // Other
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSources": true
+  },
+  "include": ["lib/**/*", "__tests__/**/*"]
 }
