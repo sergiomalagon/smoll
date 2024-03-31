@@ -1,46 +1,53 @@
 {
-	"name": "skiddoserver-lib",
-	"version": "0.0.1",
-	"description": "Node server with zero dependencies",
-	"main": "dist/index.js",
-	"types": "dist/index.d.ts",
-	"type": "module",
-	"files": [
-		"lib",
-		"*.d.ts"
-	],
-	"engines": {
-		"node": ">=20"
-	},
-	"scripts": {
-		"build": "tsc",
-		"start": "node dist/index.js",
-		"dev:tsc": "tsc --watch --preserveWatchOutput",
-		"dev:node": "node --enable-source-maps --watch dist/index.js",
-		"dev:node:debug": "node --enable-source-maps --inspect --watch dist/index.js",
-		"dev": "pnpm run \"/dev:(tsc|node)/\"",
-		"debug": "pnpm run \"/dev:(tsc|node:debug)/\""
-	},
-	"keywords": [
-		"web server",
-		"node",
-		"typescript"
-	],
-	"author": "Sergio Malagón Martín",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/sergiomalagon/web-server-lib.git"
-	},
-	"bugs": {
-		"url": "https://github.com/sergiomalagon/web-server-lib/issues"
-	},
-	"homepage": "https://github.com/sergiomalagon/web-server-lib#readme",
-	"devDependencies": {
-		"@types/node": "20.11.25",
-		"eslint": "8.57.0",
-		"prettier": "3.2.5",
-		"typescript": "5.4.2",
-		"typescript-eslint": "7.3.1"
-	}
+  "name": "smoll-webserver",
+  "version": "0.0.1",
+  "description": "Minimal node server with zero dependencies || Node tools to help create a web server",
+  "main": "dist/lib/index.js",
+  "types": "dist/lib/index.d.ts",
+  "type": "module",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "lib",
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/lib/index.d.ts",
+      "import": "./dist/lib/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev:tsc": "tsc --watch --preserveWatchOutput",
+    "dev:node": "node --enable-source-maps --watch dist/index.js",
+    "dev:node:debug": "node --enable-source-maps --inspect --watch dist/index.js",
+    "dev": "pnpm run \"/dev:(tsc|node)/\"",
+    "debug": "pnpm run \"/dev:(tsc|node:debug)/\""
+  },
+  "keywords": [
+    "server",
+    "node",
+    "typescript",
+    "minimal"
+  ],
+  "author": "Sergio Malagón Martín",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sergiomalagon/smoll-webserver.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sergiomalagon/smoll-webserver/issues"
+  },
+  "homepage": "https://github.com/sergiomalagon/smoll-webserver#readme",
+  "devDependencies": {
+    "@types/node": "20.11.25",
+    "prettier": "3.2.5",
+    "typescript": "5.4.2"
+  }
 }
