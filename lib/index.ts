@@ -30,7 +30,7 @@ export default class Smoll {
   constructor(opts?: SmollContructor) {
     this.routes = opts?.routes || {};
 
-    http.createServer(this.callback().bind(this)).listen({
+    http.createServer({ ...opts }, this.callback().bind(this)).listen({
       host: opts?.host,
       port: opts?.port,
     });
@@ -54,4 +54,4 @@ export default class Smoll {
 
 export { Smoll };
 
-export type { SmollRoutes}
+export type { SmollRoutes };
