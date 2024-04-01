@@ -1,29 +1,26 @@
 {
-	"compilerOptions": {
-		// Base options
-		"esModuleInterop": true,
-		"skipLibCheck": true,
-		"target": "ES2022",
-		"resolveJsonModule": true,
-		"moduleDetection": "force",
-		"isolatedModules": true,
-		// Strictness
-		"strict": true,
-		"noUncheckedIndexedAccess": true,
-		// Transpiling
-		"moduleResolution": "NodeNext",
-		"module": "NodeNext",
-		"outDir": "dist",
-		"lib": ["ES2022"],
-		// Other
-		"sourceMap": true,
-		"noImplicitAny": true,
-		"strictNullChecks": true,
-		"strictFunctionTypes": true,
-		"strictPropertyInitialization": true,
-		"forceConsistentCasingInFileNames": true,
-		"declaration": true,
-		"declarationDir": "./types"
-	},
-	"include": ["src/**/*"],
+  "compilerOptions": {
+    // Base options
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ES2022",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    // Strictness
+    "strict": true,
+    // Transpiling
+    "moduleResolution": "NodeNext",
+    "module": "NodeNext",
+    "outDir": "dist",
+    "lib": ["ES2022"],
+    // Other
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "inlineSources": true
+  },
+  "include": ["lib/**/*", "__tests__/**/*"]
 }
