@@ -3,6 +3,8 @@
 import http from 'node:http';
 import type { ServerOptions, IncomingMessage, ServerResponse } from 'node:http';
 
+import { Buffer } from 'node:buffer';
+
 interface SmollRoutes {
   [path: string]: {
     method: 'GET';
@@ -11,7 +13,11 @@ interface SmollRoutes {
 }
 
 interface SmollContructor extends ServerOptions {
-  routes?: SmollRoutes;
+  /**
+   * @todo Add docs
+   * @sergiomalagon
+   */
+  routes: SmollRoutes;
   /**
    * @todo Add docs
    * @default ```localhost```
@@ -42,6 +48,23 @@ export default class Smoll {
 
       if (req?.url) {
         handle = this.routes[req.url];
+
+        if (!handle) {
+          const r = Buffer.from(
+            JSON.stringify({
+              message: 'URL not found',
+              status: 'ERROR',
+            })
+          );
+
+          res.writeHead(404, {
+            'content-type': 'application/json',
+            'content-length': r.byteLength,
+          });
+          res.write(r);
+          res.end();
+          return;
+        }
 
         if (handle && handle.method === req.method) {
           handle.handle(req, res);
