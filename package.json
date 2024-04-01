@@ -1,7 +1,7 @@
 {
   "name": "smoll-webserver",
-  "version": "0.0.1",
-  "description": "Minimal node server with zero dependencies || Node tools to help create a web server",
+  "version": "0.2.0",
+  "description": "Node tools to help you create servers without abstractions",
   "main": "dist/lib/index.js",
   "types": "dist/lib/index.d.ts",
   "type": "module",
