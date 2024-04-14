@@ -15,12 +15,6 @@
     "module": "NodeNext",
     "outDir": "dist",
     "lib": ["ES2022"],
-    // Other
-    "sourceMap": true,
-    "forceConsistentCasingInFileNames": true,
-    "declaration": true,
-    "declarationMap": true,
-    "inlineSources": true
   },
-  "include": ["lib/**/*", "__tests__/**/*"]
+  "include": ["lib/smoll.d.ts", "__tests__/**/*"]
 }
