@@ -1,8 +1,12 @@
-# Smoll Webserver
+# Smoll
 
-Minimal node library with routing and function helpers to assist **YOU** create servers with zero dependencies and no abstractions.
+Node library for server creation with routing. 
 
-> ⚠️ **EARLY DEVELOPMENT, THE API WILL CHANGE**: Don't use it in **ANY** production enviroment!
+Don't bother sending PR's, I won't be reviewing them. I have this project public just to use the beneficts of public projects in GitHub. If you don't like something you can fork it.
+
+If you find bugs please report them.
+
+Be aware, the API could break at any update.
 
 ## Changelog
 
@@ -17,3 +21,8 @@ Minimal node library with routing and function helpers to assist **YOU** create 
 - Fixed semver version
 - Added 404 routes fallback
 - Updated package description
+
+### 0.3.0
+
+- Added router to handle static and dynamic routes
+- Renamed library from "smoll-webserver" to "smoll"
