@@ -2,8 +2,8 @@
   "name": "smoll",
   "version": "0.3.0",
   "description": "Node library for server creation with routing",
-  "main": "./dist/lib/smoll.js",
-  "types": "./dist/lib/smoll.d.ts",
+  "main": "dist/lib/smoll.js",
+  "types": "dist/lib/smoll.d.ts",
   "type": "module",
   "files": [
     "LICENSE",
@@ -13,12 +13,6 @@
   ],
   "engines": {
     "node": ">=20"
-  },
-  "exports": {
-    ".": {
-      "types": "./dist/lib/smoll.d.ts",
-      "default": "./dist/lib/smoll.js"
-    }
   },
   "scripts": {
     "test": "tsc && node --inspect dist/tests/index.js"
