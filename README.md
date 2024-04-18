@@ -4,8 +4,6 @@ Node library for server creation with routing.
 
 Don't bother sending PR's, I won't be reviewing them. I have this project public just to use the beneficts of public projects in GitHub. If you don't like something you can fork it.
 
-If you find bugs please report them.
-
 Be aware, the API could break at any update.
 
 ## Changelog
