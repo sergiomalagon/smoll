@@ -93,12 +93,10 @@ class Smoll {
       }
 
       // if the url is not static then we search it as dynamic
-      let match = dynamicRoutesRegex.exec(req.url!);
-
-      console.log(match);
+      let match = dynamicRoutesRegex.exec(req.url!)?.slice(1);
 
       if (match) {
-        for (let i = 0, len = match.length, mathc = match.slice(1); i < len; ++i) {
+        for (let i = 0, len = match.length; i < len; ++i) {
           if (match[i]) {
             this.dynamicRoutesArray[i].handle(req, res);
             return;
