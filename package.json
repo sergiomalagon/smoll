@@ -15,6 +15,7 @@
     "node": ">=20"
   },
   "scripts": {
+    "build": "tsc",
     "test": "tsc && node --inspect dist/tests/index.js"
   },
   "keywords": [

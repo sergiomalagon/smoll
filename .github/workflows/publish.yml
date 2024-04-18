@@ -14,15 +14,15 @@ jobs:
               with:
                   registry-url: https://registry.npmjs.org/
                   node-version: '20'
-            - name: Install pnpm
-              uses: pnpm/action-setup@v3
+            - name: Install bun
+              uses: oven-sh/setup-bun@v1
               with:
-                  version: 8
+                  bun-version: "latest"
             - name: Install dependencies
-              run: pnpm install
+              run: bun install
             - name: Build
-              run: pnpm build
+              run: bun run build
             - name: Publish package on NPM 📦
-              run: pnpm publish
+              run: bun run publish
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
