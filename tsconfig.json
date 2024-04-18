@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    // Base options
     "esModuleInterop": true,
     "skipLibCheck": true,
     "target": "ES2022",
@@ -8,19 +7,14 @@
     "resolveJsonModule": true,
     "moduleDetection": "force",
     "isolatedModules": true,
-    // Strictness
     "strict": true,
-    // Transpiling
     "moduleResolution": "NodeNext",
     "module": "NodeNext",
     "outDir": "dist",
     "lib": ["ES2022"],
-    // Other
-    "sourceMap": true,
-    "forceConsistentCasingInFileNames": true,
     "declaration": true,
-    "declarationMap": true,
-    "inlineSources": true
+    "sourceMap": true,
+    "incremental": true,
   },
-  "include": ["lib/**/*", "__tests__/**/*"]
+  "include": ["lib/**/*", "tests/**/*"],
 }

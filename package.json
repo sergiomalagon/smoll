@@ -1,9 +1,9 @@
 {
-  "name": "smoll-webserver",
-  "version": "0.2.0",
-  "description": "Node tools to help you create servers without abstractions",
-  "main": "dist/lib/index.js",
-  "types": "dist/lib/index.d.ts",
+  "name": "smoll",
+  "version": "0.3.0",
+  "description": "Node library for server creation with routing",
+  "main": "dist/lib/smoll.js",
+  "types": "dist/lib/smoll.d.ts",
   "type": "module",
   "files": [
     "LICENSE",
@@ -14,20 +14,8 @@
   "engines": {
     "node": ">=20"
   },
-  "exports": {
-    ".": {
-      "types": "./dist/lib/index.d.ts",
-      "import": "./dist/lib/index.js"
-    }
-  },
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "dev:tsc": "tsc --watch --preserveWatchOutput",
-    "dev:node": "node --enable-source-maps --watch dist/index.js",
-    "dev:node:debug": "node --enable-source-maps --inspect --watch dist/index.js",
-    "dev": "pnpm run \"/dev:(tsc|node)/\"",
-    "debug": "pnpm run \"/dev:(tsc|node:debug)/\""
+    "test": "tsc && node --inspect dist/tests/index.js"
   },
   "keywords": [
     "server",
@@ -39,15 +27,14 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/sergiomalagon/smoll-webserver.git"
+    "url": "https://github.com/sergiomalagon/smoll.git"
   },
   "bugs": {
-    "url": "https://github.com/sergiomalagon/smoll-webserver/issues"
+    "url": "https://github.com/sergiomalagon/smoll/issues"
   },
-  "homepage": "https://github.com/sergiomalagon/smoll-webserver#readme",
+  "homepage": "https://github.com/sergiomalagon/smoll#readme",
   "devDependencies": {
     "@types/node": "20.11.25",
-    "prettier": "3.2.5",
     "typescript": "5.4.2"
   }
 }
