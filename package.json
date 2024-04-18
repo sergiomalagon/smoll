@@ -2,36 +2,31 @@
   "name": "smoll",
   "version": "0.3.0",
   "description": "Node library for server creation with routing",
-  "main": "./lib/index.js",
-  "types": "./lib/index.d.ts",
+  "main": "./dist/lib/smoll.js",
+  "types": "./dist/lib/smoll.d.ts",
   "type": "module",
   "files": [
     "LICENSE",
     "README.md",
-    "lib"
+    "lib",
+    "dist"
   ],
   "engines": {
     "node": ">=20"
   },
   "exports": {
     ".": {
-      "types": "./lib/index.d.ts",
-      "default": "./lib/index.js"
+      "types": "./dist/lib/smoll.d.ts",
+      "default": "./dist/lib/smoll.js"
     }
   },
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "dev:tsc": "tsc --watch --preserveWatchOutput",
-    "dev:node": "node --enable-source-maps --watch dist/index.js",
-    "dev:node:debug": "node --enable-source-maps --inspect --watch dist/index.js",
-    "dev": "pnpm run \"/dev:(tsc|node)/\"",
-    "debug": "pnpm run \"/dev:(tsc|node:debug)/\""
+    "test": "tsc && node --inspect dist/tests/index.js"
   },
   "keywords": [
     "server",
     "node",
-    "javascript",
+    "typescript",
     "minimal"
   ],
   "author": "Sergio Malagón Martín",
