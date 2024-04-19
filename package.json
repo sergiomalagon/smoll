@@ -2,14 +2,13 @@
   "name": "smoll",
   "version": "0.3.0",
   "description": "Node library for server creation with routing",
-  "main": "dist/lib/smoll.js",
-  "types": "dist/lib/smoll.d.ts",
+  "main": "lib/smoll.js",
+  "types": "lib/smoll.d.ts",
   "type": "module",
   "files": [
     "LICENSE",
     "README.md",
-    "lib",
-    "dist"
+    "lib"
   ],
   "engines": {
     "node": ">=20"
@@ -21,7 +20,7 @@
   "keywords": [
     "server",
     "node",
-    "typescript",
+    "javascript",
     "minimal"
   ],
   "author": "Sergio Malagón Martín",
