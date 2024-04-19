@@ -31,4 +31,4 @@ declare class Smoll {
 
 export { Smoll };
 export { Smoll as default };
-export type { SmollRoute };
+export type { SmollRoute, IncomingMessage, ServerOptions, ServerResponse };
