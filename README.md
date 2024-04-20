@@ -25,3 +25,6 @@ Be aware, the API could break at any update.
 - Added router to handle static and dynamic routes
 - Renamed library from "smoll-webserver" to "smoll"
 - Moved project from typescript to javascript
+
+### 0.3.1
+- Fixed reference error with class variables
