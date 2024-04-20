@@ -1,6 +1,6 @@
 {
   "name": "smoll",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Node library for server creation with routing",
   "main": "lib/smoll.js",
   "types": "lib/smoll.d.ts",
@@ -15,7 +15,7 @@
   },
   "scripts": {
     "build": "tsc",
-    "test": "tsc && node --inspect dist/tests/index.js"
+    "test": "tsc && node --inspect dist/index.js"
   },
   "keywords": [
     "server",
