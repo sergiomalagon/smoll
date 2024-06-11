@@ -1,40 +1,43 @@
 {
-  "name": "smoll",
-  "version": "0.3.1",
-  "description": "Node library for server creation with routing",
-  "main": "lib/smoll.js",
-  "types": "lib/smoll.d.ts",
-  "type": "module",
-  "files": [
-    "LICENSE",
-    "README.md",
-    "lib"
-  ],
-  "engines": {
-    "node": ">=20"
-  },
-  "scripts": {
-    "build": "tsc",
-    "test": "tsc && node --inspect dist/index.js"
-  },
-  "keywords": [
-    "server",
-    "node",
-    "javascript",
-    "minimal"
-  ],
-  "author": "Sergio Malagón Martín",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/sergiomalagon/smoll.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sergiomalagon/smoll/issues"
-  },
-  "homepage": "https://github.com/sergiomalagon/smoll#readme",
-  "devDependencies": {
-    "@types/node": "20.11.25",
+	"name": "smoll",
+	"version": "0.4.0",
+	"description": "Node library for server creation with routing",
+	"main": "dist/lib/index.js",
+	"types": "dist/lib/index.d.ts",
+	"type": "module",
+	"files": [
+		"LICENSE",
+		"README.md",
+		"lib",
+		"dist"
+	],
+	"engines": {
+		"node": ">=20"
+	},
+	"scripts": {
+		"build": "tsc",
+		"test:tsc": "tsc --watch --preserveWatchOutput",
+		"test:node": "node --inspect --trace-warnings --enable-source-maps --watch-preserve-output --watch dist/examples/index.js",
+		"debug": "tsc && node --inspect dist/examples/index.js"
+	},
+	"keywords": [
+		"server",
+		"node",
+		"typescript",
+		"minimal"
+	],
+	"author": "Sergio Malagón Martín",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/sergiomalagon/smoll.git"
+	},
+	"bugs": {
+		"url": "https://github.com/sergiomalagon/smoll/issues"
+	},
+	"homepage": "https://github.com/sergiomalagon/smoll#readme",
+	"devDependencies": {
+		"@types/node": "20.11.25",
 		"typescript": "5.4.5"
-  }
+	}
 }
