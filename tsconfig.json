@@ -10,8 +10,11 @@
     "module": "NodeNext",
     "outDir": "dist",
     "lib": ["ES2022"],
+    "strict": true,
+    "alwaysStrict": true,
     "sourceMap": true,
-    "incremental": true,
+    "declaration": true,
+    "incremental": true
   },
-  "include": ["lib/smoll.d.ts", "tests/**/*"],
+  "include": ["lib/*.ts", "examples/**/*"]
 }
