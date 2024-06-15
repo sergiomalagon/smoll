@@ -3,16 +3,16 @@ import { Buffer } from "node:buffer";
 
 // TODO: Add docs!
 export function parseUrlEncodedBody(body: Buffer) {
-	const parsed_body = Object.create(null);
+	const result: Record<"key"|"value", string | null>[] = [];
 	const values = body.toString().split(/&/);
-	
 	for (let i = 0; i < values.length; i++) {
 		const [key, value] = values[i].split(/=/);
-		if (!key || !value) continue;
-		parsed_body[key] = value;
+		result.push({
+			key: key ?? null,
+			value: value ?? null,
+		})
 	}
-	
-	return parsed_body;
+	return result;
 }
 
 // TODO: Add docs!
